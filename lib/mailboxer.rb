@@ -16,7 +16,9 @@ module Mailboxer
   mattr_accessor :name_method
   @@name_method = :name
   mattr_accessor :notification_mailer
+  @@notification_mailer = NotificationMailer
   mattr_accessor :message_mailer
+  @@message_mailer = MessageMailer
 
    class << self
     def setup
